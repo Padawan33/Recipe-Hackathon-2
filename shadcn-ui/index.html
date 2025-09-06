@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+  <title>Modern Dark App</title>
+  <meta name="description" content="A modern, clean single-page web application with dark theme" />
+  <meta name="author" content="MGX" />
+
+  <meta property="og:title" content="Modern Dark App" />
+  <meta property="og:description" content="A modern, clean single-page web application with dark theme" />
+  <meta property="og:type" content="website" />
+
+</head>
+
+<body class="dark:bg-gray-900">
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+
+  <div id="paywall-message">
+    <p>This is a premium feature. Please upgrade your subscription to access the grocery list.</p>
+  </div>
+
+  <div id="grocery-list-ui" class="hidden">
+    <h2>My Grocery List</h2>
+    <input type="text" id="grocery-item-input" placeholder="Add a new item">
+    <button id="add-item-btn">Add</button>
+    <ul id="grocery-items-list">
+      </ul>
+    <button id="save-list-btn">Save List</button>
+  </div>
+
+</body>
+
+</html>
