@@ -5,6 +5,6 @@
     "react-dom": "^19.1.1"
   },
   "scripts": {
-    "build": "cd shadcn-ui && pnpm run build"
+    "build": "pnpm --filter=./shadcn-ui build"
   }
 }
